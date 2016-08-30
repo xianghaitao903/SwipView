@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  SwipView
+//
+//  Created by xianghaitao on 16/8/29.
+//
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define KScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+#define KScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
