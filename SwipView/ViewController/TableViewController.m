@@ -1,13 +1,13 @@
 //
 //  TableViewController.m
-//  SwipView
 //
-//  Created by xianghaitao on 16/8/29.
+//
+//  Created by xianghaitao
 //
 //
 
 #import "TableViewController.h"
-static NSString * const cellId = @"cellID";
+static NSString *const cellId = @"cellID";
 
 @interface TableViewController ()
 
@@ -48,7 +48,10 @@ static NSString * const cellId = @"cellID";
   UITableViewCell *cell =
       [tableView dequeueReusableCellWithIdentifier:cellId
                                       forIndexPath:indexPath];
-    cell.textLabel.text = [NSString stringWithFormat:@"%d",indexPath.row];
+  if (indexPath.row == 0) {
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", indexPath.row];
+  }
+
   return cell;
 }
 

@@ -13,6 +13,8 @@
 
 @property(nonatomic, strong) DraggabbleView *draggableView;
 
+@property(nonatomic, strong) UILabel *label;
+
 @end
 
 @implementation DragViewController
@@ -20,7 +22,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   self.title = @"视图拖动";
-    [self.view addSubview:self.draggableView];
+  [self.view addSubview:self.draggableView];
   // Do any additional setup after loading the view.
 }
 
@@ -31,10 +33,14 @@
 
 - (DraggabbleView *)draggableView {
   if (!_draggableView) {
-    _draggableView = [[DraggabbleView alloc] initWithFrame:CGRectMake(50,100,200,200)];
+    _draggableView =
+        [[DraggabbleView alloc] initWithFrame:CGRectMake(50, 100, 200, 200)];
     _draggableView.backgroundColor = [UIColor orangeColor];
   }
   return _draggableView;
+}
+
+- (void)test {
 }
 
 @end

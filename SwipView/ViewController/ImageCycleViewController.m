@@ -31,7 +31,7 @@
   [self setupSubviews];
   [self setLayout];
   [self setupTimer];
-  // Do any additional setup after loading the view.
+  // Do any addSubviewditional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,7 +116,6 @@
 }
 
 #pragma mark - private methods
-
 /**
  *  当前页 左移减1 右移加 1
  *  移动之后重新给ScrollView中的三个ImageView 的 image 赋值

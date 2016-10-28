@@ -18,6 +18,7 @@
 		952984661D73DE8E00F5C7E2 /* ImageCycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952984651D73DE8E00F5C7E2 /* ImageCycleViewController.m */; };
 		952984691D73DE9E00F5C7E2 /* DragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 952984681D73DE9E00F5C7E2 /* DragViewController.m */; };
 		9529846C1D73E41500F5C7E2 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9529846B1D73E41500F5C7E2 /* TableViewController.m */; };
+		954F66E41D767C8B002CAC80 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 954F66E31D767C8B002CAC80 /* AutoLayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		9529846A1D73E41500F5C7E2 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		9529846B1D73E41500F5C7E2 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		952984741D74151D00F5C7E2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		954F66E21D767C8B002CAC80 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		954F66E31D767C8B002CAC80 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				952984681D73DE9E00F5C7E2 /* DragViewController.m */,
 				9529846A1D73E41500F5C7E2 /* TableViewController.h */,
 				9529846B1D73E41500F5C7E2 /* TableViewController.m */,
+				954F66E21D767C8B002CAC80 /* AutoLayoutViewController.h */,
+				954F66E31D767C8B002CAC80 /* AutoLayoutViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					952984331D73D38A00F5C7E2 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4N53RGS75B;
 					};
 					9529844C1D73D38A00F5C7E2 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -263,6 +269,7 @@
 				952984691D73DE9E00F5C7E2 /* DragViewController.m in Sources */,
 				9516299A1D74378D002E02D5 /* DraggabbleView.m in Sources */,
 				9529843C1D73D38A00F5C7E2 /* AppDelegate.m in Sources */,
+				954F66E41D767C8B002CAC80 /* AutoLayoutViewController.m in Sources */,
 				9529846C1D73E41500F5C7E2 /* TableViewController.m in Sources */,
 				952984391D73D38A00F5C7E2 /* main.m in Sources */,
 			);
@@ -384,11 +391,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiong Zhang (CCA65J8275)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiong Zhang (CCA65J8275)";
 				GCC_PREFIX_HEADER = SwipView/PrefixHeader.pch;
 				INFOPLIST_FILE = SwipView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianghaitao.SwipView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4bedf231-dedf-4f34-a001-90ab2fca6c40";
 			};
 			name = Debug;
 		};
@@ -396,11 +406,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: xiong Zhang (CCA65J8275)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xiong Zhang (CCA65J8275)";
 				GCC_PREFIX_HEADER = SwipView/PrefixHeader.pch;
 				INFOPLIST_FILE = SwipView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xianghaitao.SwipView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4bedf231-dedf-4f34-a001-90ab2fca6c40";
 			};
 			name = Release;
 		};

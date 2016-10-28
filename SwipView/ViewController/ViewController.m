@@ -6,6 +6,7 @@
 //
 //
 
+#import "AutoLayoutViewController.h"
 #import "DragViewController.h"
 #import "ImageCycleViewController.h"
 #import "SwipViewController.h"
@@ -74,6 +75,10 @@
     [self.navigationController pushViewController:[DragViewController new]
                                          animated:YES];
     break;
+  case 3:
+    [self.navigationController pushViewController:[AutoLayoutViewController new]
+                                         animated:YES];
+    break;
   default:
     break;
   }
@@ -92,7 +97,13 @@
 
 - (NSArray *)dataArr {
   if (!_dataArr) {
-    _dataArr = @[ @"视图切换", @"轮播", @"拖动" ];
+    _dataArr = @[
+      @"视图切换",
+      @"轮播",
+      @"拖动",
+      @"代"
+      @"码实现AutoLayout"
+    ];
   }
   return _dataArr;
 }
